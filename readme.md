@@ -37,4 +37,4 @@ If you let the drone's WIFI connection lapse, you have to restart the server by 
 
 ## Credits
 
-Credits to [Wes Bos](https://wesbos.com/) for the backend part of this code base. Thanks to him I could just focus on the AI part of this.
+Credits to [Wes Bos](https://wesbos.com/) for the backend part of this code base. Thanks to him I could just focus on the AI part.
