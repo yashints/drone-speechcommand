@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Using Speech command to fly a drone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="robot.scss" />
+  </head>
+  <body>
+      <div class="dog">
+          <div class="ears"></div>
+          
+          <div class="body">
+            <div class="eyes"></div>
+            <div class="beard">
+              <div class="mouth">
+                <div class="tongue"></div>
+              </div>
+            </div>
+            <div class="belt">
+              <div class="locket"></div>
+              <div class="dot dot1"></div>
+              <div class="dot dot2"></div>
+              <div class="dot dot3"></div>
+              <div class="dot dot4"></div>
+              <div class="tag"></div>
+            </div>
+            <div class="stomach">
+            </div>
+            <div class="legs">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+          <div class="tail">
+          </div>
+        </div>
+      
+        <div class="main">      
+            <div class="connect">
+              <button onclick="connect()">
+                <img src="/img/connect.png" />
+              </button>              
+
+            </div>    
+
+            <div class="sampling">
+              <button id="takeoff" onmousedown="collect(0)" onmouseup="collect(null)">
+                  <img src="/img/takeoff.png" >
+              </button>
+              <button id="land" onmousedown="collect(1)" onmouseup="collect(null)">
+                  <img src="/img/land.png" >
+              </button>
+              <button id="flip" onmousedown="collect(2)" onmouseup="collect(null)">
+                  <img src="/img/flip.png" >
+              </button>
+              <button id="noise" onmousedown="collect(3)" onmouseup="collect(null)">
+                  <img src="/img/noise.png" >
+              </button>
+            </div>
+            <div class="training">
+                <button id="train" onclick="train()">
+                    <img src="/img/brain.png">
+                  </button>
+            </div>
+            
+      
+            <div class="listen">
+                <a id="listen" onclick="listen()">
+                    Listen 👂🏼
+                </a>
+            </div>
+      
+            <div id="console"></div>
+      
+            <div id="droneState"></div>
+        </div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

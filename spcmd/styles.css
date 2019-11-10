@@ -1,0 +1,122 @@
+body,
+html {
+  background: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+button {
+  box-sizing: border-box;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+}
+
+.main {
+  height: 60%;
+  width: 30%;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3em;
+}
+
+.sampling {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sampling button {  
+  background-color: transparent;
+}
+
+.sampling button img {
+  width: 60px;
+  height: 60px;
+}
+
+.training button {
+  margin-top: 2em;
+  border: none;
+  background-color: transparent;
+}
+
+.training button img {
+  width: 60px;
+  height: 60px;
+}
+
+.listen a {  
+  margin-top: 3em;
+  border-radius: 2em;  
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  transition: all 0.2s;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.listen a:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.listen button img {
+  width: 60px;
+  height: 60px;
+}
+
+.training,
+.listen,
+.connect {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#console,
+#droneState {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.connect button {
+  margin-bottom: 2em;
+  border: none;
+  background-color: transparent;
+}
+
+.connect button img {
+  width: 60px;
+  height: 60px;
+}

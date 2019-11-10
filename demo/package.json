@@ -1,0 +1,57 @@
+{
+  "name": "posenet-control-drone",
+  "version": "1.0.0",
+  "description": "Front end for the node app which can control a drone using PoseNet",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "dependencies": {
+    "@tensorflow-models/posenet": "^2.1.1",
+    "@tensorflow/tfjs": "^1.2.11",
+    "dat.gui": "^0.7.6",
+    "socket.io-client": "^2.3.0",
+    "stats.js": "^0.17.0"
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development parcel index.html --no-hmr --open ",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url ./"
+  },
+  "keywords": [
+    "posenet",
+    "tensorflowjs",
+    "drone"
+  ],
+  "author": "Yaser Adel Mehraban (Yashints)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "clang-format": "^1.2.4",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-google": "^0.14.0",
+    "parcel-bundler": "^1.12.4",
+    "yalc": "^1.0.0-pre.34"
+  },
+  "eslintConfig": {
+    "extends": "google",
+    "rules": {
+      "require-jsdoc": 0,
+      "valid-jsdoc": 0
+    },
+    "env": {
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    }
+  },
+  "eslintIgnore": [
+    "dist/"
+  ]
+}

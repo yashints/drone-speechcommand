@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flying a drone with Tensorflow.js</title>
+</head>
+<body>
+  <div id="info" style='display:none'>
+    </div>
+    <div id="loading" style='display:flex'>
+      <div class="spinner-text">
+        Loading PoseNet model...
+      </div>
+    <div class="sk-spinner sk-spinner-pulse"></div>
+  </div>
+  <div id='main' style='display:none'>
+    <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+    ">
+    </video>
+    <canvas id="output" />
+  </div>
+
+  <div id="result">
+
+  </div>
+
+  <div id="droneState">
+    DISCONNECTED
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
